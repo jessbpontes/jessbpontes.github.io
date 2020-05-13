@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2290.066" height="475" viewBox="0 0 2290.066 475">
   <g id="Grupo_4628" data-name="Grupo 4628" transform="translate(-12952.934 2336)">
+    <g id="Retângulo_3501" data-name="Retângulo 3501" transform="translate(12953 -2336)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.049">
+      <rect width="2290" height="475" stroke="none"/>
+      <rect x="0.5" y="0.5" width="2289" height="474" fill="none"/>
+    </g>
     <g id="Grupo_3444" data-name="Grupo 3444" transform="translate(10580 -2888)">
       <line id="Linha_650" data-name="Linha 650" y1="21" x2="317.5" transform="translate(2373 734.5)" fill="none" stroke="#4574b4" stroke-width="2"/>
       <line id="Linha_673" data-name="Linha 673" y1="38" x2="224" transform="translate(2710.5 690.5)" fill="none" stroke="#4574b4" stroke-width="2"/>
@@ -15,19 +19,19 @@
       <line id="Linha_665" data-name="Linha 665" x1="296" transform="translate(3456.5 908.5)" fill="none" stroke="#4574b4" stroke-width="2"/>
       <line id="Linha_660" data-name="Linha 660" x1="295" transform="translate(2912 802.5)" fill="none" stroke="#4574b4" stroke-width="2"/>
       <line id="Linha_669" data-name="Linha 669" x1="295" transform="translate(2912 681.5)" fill="none" stroke="#4574b4" stroke-width="2"/>
-      <rect id="Retângulo_2239" data-name="Retângulo 2239" width="94" height="55" transform="translate(2904.5 769)" fill="#cecece"/>
-      <rect id="Retângulo_2240" data-name="Retângulo 2240" width="94" height="55" transform="translate(2904.5 654)" fill="#cecece"/>
+      <rect id="Retângulo_2239" data-name="Retângulo 2239" width="94" height="55" rx="6" transform="translate(2904.5 769)" fill="#cecece"/>
+      <rect id="Retângulo_2240" data-name="Retângulo 2240" width="94" height="55" rx="6" transform="translate(2904.5 654)" fill="#cecece"/>
       <line id="Linha_672" data-name="Linha 672" x2="189.5" y2="35" transform="translate(2710 755.5)" fill="none" stroke="#4574b4" stroke-width="2"/>
-      <rect id="Retângulo_2250" data-name="Retângulo 2250" width="113" height="55" transform="translate(3858.5 621)" fill="#cecece"/>
-      <rect id="Retângulo_2251" data-name="Retângulo 2251" width="113" height="55" transform="translate(4105.5 690)" fill="#cecece"/>
-      <rect id="Retângulo_2252" data-name="Retângulo 2252" width="113" height="55" transform="translate(4105.5 590)" fill="#cecece"/>
-      <rect id="Retângulo_2247" data-name="Retângulo 2247" width="113" height="55" transform="translate(3545.5 804)" fill="#cecece"/>
-      <rect id="Retângulo_2243" data-name="Retângulo 2243" width="113" height="55" transform="translate(3404.5 619)" fill="#cecece"/>
-      <rect id="Retângulo_2246" data-name="Retângulo 2246" width="113" height="55" transform="translate(3545.5 619)" fill="#cecece"/>
-      <rect id="Retângulo_2245" data-name="Retângulo 2245" width="113" height="55" transform="translate(3545.5 720)" fill="#cecece"/>
-      <rect id="Retângulo_2249" data-name="Retângulo 2249" width="113" height="55" transform="translate(3695.5 720)" fill="#cecece"/>
-      <rect id="Retângulo_2244" data-name="Retângulo 2244" width="113" height="55" transform="translate(3403.5 824)" fill="#cecece"/>
-      <rect id="Retângulo_2248" data-name="Retângulo 2248" width="113" height="55" transform="translate(3545.5 877)" fill="#cecece"/>
+      <rect id="Retângulo_2250" data-name="Retângulo 2250" width="113" height="55" rx="6" transform="translate(3858.5 621)" fill="#cecece"/>
+      <rect id="Retângulo_2251" data-name="Retângulo 2251" width="113" height="55" rx="6" transform="translate(4105.5 690)" fill="#cecece"/>
+      <rect id="Retângulo_2252" data-name="Retângulo 2252" width="113" height="55" rx="6" transform="translate(4105.5 590)" fill="#cecece"/>
+      <rect id="Retângulo_2247" data-name="Retângulo 2247" width="113" height="55" rx="6" transform="translate(3545.5 804)" fill="#cecece"/>
+      <rect id="Retângulo_2243" data-name="Retângulo 2243" width="113" height="55" rx="6" transform="translate(3404.5 619)" fill="#cecece"/>
+      <rect id="Retângulo_2246" data-name="Retângulo 2246" width="113" height="55" rx="6" transform="translate(3545.5 619)" fill="#cecece"/>
+      <rect id="Retângulo_2245" data-name="Retângulo 2245" width="113" height="55" rx="6" transform="translate(3545.5 720)" fill="#cecece"/>
+      <rect id="Retângulo_2249" data-name="Retângulo 2249" width="113" height="55" rx="6" transform="translate(3695.5 720)" fill="#cecece"/>
+      <rect id="Retângulo_2244" data-name="Retângulo 2244" width="113" height="55" rx="6" transform="translate(3403.5 824)" fill="#cecece"/>
+      <rect id="Retângulo_2248" data-name="Retângulo 2248" width="113" height="55" rx="6" transform="translate(3545.5 877)" fill="#cecece"/>
       <text id="Avaliable_POS" data-name="Avaliable
 POS" transform="translate(3914.5 644)" font-size="18" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-36" y="0">Avaliable</tspan><tspan x="-18.504" y="22">POS</tspan></text>
       <text id="Order_POS" data-name="Order 
@@ -45,18 +49,15 @@ attach
       <text id="Payment_Link" data-name="Payment 
 Link" transform="translate(3459.5 847)" font-size="16" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-33.792" y="0">Payment </tspan><tspan x="-14.824" y="18">Link</tspan></text>
       <text id="Bank_slip_" data-name="Bank slip " transform="translate(3602.5 911)" font-size="18" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-39.51" y="0">Bank slip </tspan></text>
-      <g id="Retângulo_2211" data-name="Retângulo 2211" transform="translate(2612.5 720)" fill="#f5f5f5" stroke="#707070" stroke-width="1">
-        <rect width="113" height="55" stroke="none"/>
-        <rect x="0.5" y="0.5" width="112" height="54" fill="none"/>
-      </g>
+      <rect id="Retângulo_2211" data-name="Retângulo 2211" width="113" height="55" rx="6" transform="translate(2612.5 720)" fill="#f5f5f5"/>
       <line id="Linha_659" data-name="Linha 659" y1="121" transform="translate(3207 681.5)" fill="none" stroke="#4574b4" stroke-width="2"/>
       <text id="POS_model" data-name="POS model" transform="translate(2670.5 751)" fill="#282828" font-size="14" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-35.791" y="0">POS model</tspan></text>
       <text id="PRO" transform="translate(2946.5 687)" fill="#282828" font-size="14" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-14.651" y="0">PRO</tspan></text>
       <text id="MINI" transform="translate(2946.5 799)" fill="#282828" font-size="14" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-14.777" y="0">MINI</tspan></text>
-      <rect id="Retângulo_2211-2" data-name="Retângulo 2211" width="94" height="55" transform="translate(3165.5 720)" fill="#cecece"/>
-      <rect id="Retângulo_2241" data-name="Retângulo 2241" width="94" height="55" transform="translate(3288.5 720)" fill="#cecece"/>
+      <rect id="Retângulo_2211-2" data-name="Retângulo 2211" width="94" height="55" rx="6" transform="translate(3165.5 720)" fill="#cecece"/>
+      <rect id="Retângulo_2241" data-name="Retângulo 2241" width="94" height="55" rx="6" transform="translate(3288.5 720)" fill="#cecece"/>
       <rect id="Retângulo_2242" data-name="Retângulo 2242" width="94" height="55" transform="translate(3403.5 720)" fill="#f5f5f5"/>
-      <rect id="Retângulo_2238" data-name="Retângulo 2238" width="94" height="55" transform="translate(3043.5 654)" fill="#cecece"/>
+      <rect id="Retângulo_2238" data-name="Retângulo 2238" width="94" height="55" rx="6" transform="translate(3043.5 654)" fill="#cecece"/>
       <text id="Amount" transform="translate(3208.5 753)" fill="#282828" font-size="14" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-24.514" y="0">Amount</tspan></text>
       <text id="Fee_plan_Selected" data-name="Fee plan
 Selected" transform="translate(3335.5 746)" fill="#282828" font-size="14" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-26.838" y="0">Fee plan</tspan><tspan x="-27.482" y="16">Selected</tspan></text>
@@ -67,9 +68,5 @@ Options" transform="translate(3452.5 745)" fill="#282828" font-size="14" font-fa
       <text id="no" transform="translate(4069 718)" font-size="16" font-family="HelveticaNeue, Helvetica Neue"><tspan x="-9.04" y="0">no</tspan></text>
     </g>
     <text id="Legend:_TED_-_Electronic_Available_Transfer._POS_-_credit_card_machines." data-name="Legend:      TED - Electronic Available Transfer.        POS - credit card machines." transform="translate(13201 -1930)" fill="#707070" font-size="20" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="19" xml:space="preserve">Legend:      TED - Electronic Available Transfer.        POS - Credit Card Machines.</tspan></text>
-    <g id="Retângulo_3501" data-name="Retângulo 3501" transform="translate(12953 -2336)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.049">
-      <rect width="2290" height="475" stroke="none"/>
-      <rect x="0.5" y="0.5" width="2289" height="474" fill="none"/>
-    </g>
   </g>
 </svg>
