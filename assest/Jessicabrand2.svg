@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="331" height="280" viewBox="0 0 331 280">
+  <defs>
+    <clipPath id="clip-Prancheta_2">
+      <rect width="331" height="280"/>
+    </clipPath>
+  </defs>
+  <g id="Prancheta_2" data-name="Prancheta – 2" clip-path="url(#clip-Prancheta_2)">
+    <rect width="331" height="280" fill="#fff"/>
+    <text id="P" transform="translate(106 218)" fill="#183884" font-size="244" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">P</tspan></text>
+    <text id="J" transform="translate(83 218)" fill="#183884" font-size="244" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">J</tspan></text>
+  </g>
+</svg>
