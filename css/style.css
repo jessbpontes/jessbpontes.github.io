@@ -1,4 +1,4 @@
-
+ 
 body {
 		background: #ffffff;
     font-family: 'Work Sans', sans-serif;
@@ -104,13 +104,13 @@ a:hover, a:active, a:focus {
 #contact,
 #single-project,
 #blog-single-post {
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .section-title {
   position: relative;
-  padding-bottom: 62px;
+  padding-bottom: 72px;
   text-align: center;
 }
 
@@ -270,7 +270,7 @@ a:hover, a:active, a:focus {
      align-items: center;
     position: relative;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 40px;
 }
 
@@ -294,7 +294,7 @@ a:hover, a:active, a:focus {
 }
 
 #about .col-md-8 img {
-  padding-right: 22px;
+  padding-right: 12px;
   padding-bottom: 10px;
 }
 
