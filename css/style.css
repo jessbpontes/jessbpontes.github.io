@@ -1,4 +1,17 @@
- 
+*{padding: 0;
+  margin: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
 		background: #ffffff;
     font-family: 'Work Sans', sans-serif;
@@ -85,18 +98,7 @@ a:hover, a:active, a:focus {
   outline: none;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 #portfolio,
 #about,
@@ -293,15 +295,17 @@ a:hover, a:active, a:focus {
   padding-left: 0px;
 }
 
-#about .col-md-8 img {
-  padding-right: 12px;
-  padding-bottom: 10px;
+#about .img-responsive {
+  width: 95%;
+  padding-right: 14px;
+  margin-bottom: 35px;
 }
 
 #about hr {
-  width: 100px;
-  margin-top: 42px;
-  margin-bottom: 42px;
+  width: 50%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 25%;
 }
 
 #about ul {
