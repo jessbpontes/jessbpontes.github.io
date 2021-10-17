@@ -60,6 +60,11 @@ h6 {
   letter-spacing: 2px;
 }
 
+h7 {
+  color: rgb(46, 75, 58);
+  font-size: 18px;
+}
+
 p {
     color: #777;
     font-size: 15px;
