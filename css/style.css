@@ -19,16 +19,10 @@ body {
 		font-weight: 300;
     overflow-x: hidden;
 }
+/*---------------------------------------
+  scroller             
+-----------------------------------------*/
 
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-
-  .card {
-    display: inline-block;
-  }
-}
 
 /*---------------------------------------
     Typorgraphy              
