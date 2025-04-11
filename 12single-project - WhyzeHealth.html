@@ -221,12 +221,13 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     padding-bottom: 10px; /* Space for scrollbar */
 }
 
-.scrolling-wrapper img {
-    display: inline-block;
-    max-width: none; /* Override the responsive image constraints */
-    max-height: 400px; /* Control the height of the image - adjust this value as needed */
-    width: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+.scrolling-wrapper img.img-responsive {
+    display: inline-block !important;
+    max-width: none !important; 
+    max-height: 400px !important; /* Adjust as needed */
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
 }
 </style>
 
