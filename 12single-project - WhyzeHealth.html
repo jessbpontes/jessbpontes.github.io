@@ -212,19 +212,22 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     </div>
 </div>
 <style>
-    .scrolling-wrapper {
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-bottom: 10px; /* Space for scrollbar */
-    }
-    
-    .scrolling-wrapper img {
-        display: inline-block;
-        max-width: none; /* Override the responsive image constraints */
-    }
+.scrolling-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px; /* Space for scrollbar */
+}
+
+.scrolling-wrapper img {
+    display: inline-block;
+    max-width: none; /* Override the responsive image constraints */
+    max-height: 400px; /* Control the height of the image - adjust this value as needed */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
 </style>
 
 
