@@ -333,21 +333,88 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
 }
 </style>
                                         
-<!-- Slideshow -->
+<br>
  <div class="scrolling-wrapper">
         <div class="slideshow-container">
-            <!-- Slideshow images - dynamically generated for all 23 images -->
-            <div id="slides-container">
-                <!-- Slides will be inserted here by JavaScript -->
+            <!-- Slideshow images - manually defined -->
+            <!-- Image 0 -->
+            <div class="mySlides fade">
+                <img src="images/whyze images/0.png" class="img-responsive" alt="Slide 1">
             </div>
+           <div class="mySlides fade">
+    <img src="images/whyze images/23.png" class="img-responsive" alt="Slide 23">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/24.png" class="img-responsive" alt="Slide 24">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/25.png" class="img-responsive" alt="Slide 25">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/26.png" class="img-responsive" alt="Slide 26">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/27.png" class="img-responsive" alt="Slide 27">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/28.png" class="img-responsive" alt="Slide 28">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/29.png" class="img-responsive" alt="Slide 29">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/30.png" class="img-responsive" alt="Slide 30">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/31.png" class="img-responsive" alt="Slide 31">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/32.png" class="img-responsive" alt="Slide 32">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/33.png" class="img-responsive" alt="Slide 33">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/34.png" class="img-responsive" alt="Slide 34">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/35.png" class="img-responsive" alt="Slide 35">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/36.png" class="img-responsive" alt="Slide 36">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/37.png" class="img-responsive" alt="Slide 37">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/38.png" class="img-responsive" alt="Slide 38">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/39.png" class="img-responsive" alt="Slide 39">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/40.png" class="img-responsive" alt="Slide 40">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/41.png" class="img-responsive" alt="Slide 41">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/42.png" class="img-responsive" alt="Slide 42">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/43.png" class="img-responsive" alt="Slide 43">
+</div>
+<div class="mySlides fade">
+    <img src="images/whyze images/44.png" class="img-responsive" alt="Slide 44">
+</div>
             
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
-            <!-- Slide counter instead of dots -->
+            <!-- Slide counter -->
             <div class="slide-counter">
-                <span id="current-slide">1</span>/<span id="total-slides">23</span>
+                <span id="current-slide">1</span>/<span id="total-slides">5</span>
             </div>
         </div>
     </div>
@@ -439,31 +506,17 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
 </style>
 
 <script>
-    // Generate slides dynamically
+    let slideIndex = 1;
+    
+    // Initialize on page load
     document.addEventListener('DOMContentLoaded', function() {
-        const slidesContainer = document.getElementById('slides-container');
-        const totalSlides = 23;
+        // Count total slides and update the counter
+        const totalSlides = document.getElementsByClassName("mySlides").length;
+        document.getElementById('total-slides').textContent = totalSlides;
         
-        // Create slides
-        for (let i = 0; i < totalSlides; i++) {
-            const slideDiv = document.createElement('div');
-            slideDiv.className = 'mySlides fade';
-            
-            const img = document.createElement('img');
-            // Use encodeURIComponent to handle spaces in the path
-            img.src = `images/whyze%20images/${i}.png`;
-            img.className = 'img-responsive';
-            img.alt = `Slide ${i+1}`;
-            
-            slideDiv.appendChild(img);
-            slidesContainer.appendChild(slideDiv);
-        }
-        
-        // Initialize slideshow
+        // Show the first slide
         showSlides(slideIndex);
     });
-    
-    let slideIndex = 1;
     
     // Next/previous controls
     function plusSlides(n) {
@@ -485,7 +538,6 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
         
         // Update counter
         document.getElementById('current-slide').textContent = slideIndex;
-        document.getElementById('total-slides').textContent = totalSlides;
         
         for (i = 0; i < totalSlides; i++) {
             slides[i].style.display = "none";
