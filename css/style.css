@@ -88,6 +88,19 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 0.5px;
 }
 
+/* In your style.css file */
+.intro-paragraph {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.2em;
+    /* You might also want to max-width this element to control line length */
+    max-width: 800px; /* Example: set a max width for optimal line length */
+    margin: 0 auto; /* Center the block if you set a max-width */
+}
+
 h1 {
     font-size: 62px;
     padding-bottom: 14px;
