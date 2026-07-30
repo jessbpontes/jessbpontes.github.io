@@ -12,146 +12,143 @@
 
 <title>Jessica Pontes -  Portfolio</title>
 
+<!-- Favicons — abstract -->
+<link rel="icon" type="image/svg+xml" href="assest/brand%20abstract/brand-32-abs.svg">
+<link rel="apple-touch-icon" href="assest/brand%20abstract/brand-120-abs.svg">
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+
+<!-- Modern UI refresh -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/modern.css">
 
 </head>
 <body>
 
-<!-- PRE LOADER -->
-
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-wordpress">
-          <span class="sk-inner-circle"></span>
+<!-- Navigation -->
+<header class="site-nav" id="siteNav">
+     <div class="wrap site-nav__inner">
+          <a href="index.html" class="site-nav__brand" aria-label="Jessica Pontes — home">
+               <img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo">
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+               </svg>
+          </button>
+          <ul class="site-nav__links" id="navLinks">
+               <li><a href="index.html" aria-current="page">Portfolio</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="blog.html">Blog</a></li>
+          </ul>
      </div>
-</div>
+</header>
 
-<!-- Navigation section  -->
+<!-- Hero -->
+<section class="hero hero--sm">
+     <div class="wrap reveal">
+          <span class="hero__eyebrow">Graphic design</span>
+          <h1>Visual &amp; brand <span class="accent">work</span>.</h1>
+          <p class="hero__lead">
+               A gallery of graphic and visual pieces — from branding and identity to social media, print and product visuals.
+          </p>
+     </div>
+</section>
 
-<!-- desktop header -->
-
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-     <div class="container">
-
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-            <a href="index.html" class="navbar-brand"><img src="assest/Jessicabrand.png"/></a> 
-
-          <!--     <span class="navbar-text"> 
-                   JESSICA PONTES
-                  </span>  --->
-
-          </div>
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    
+<!-- Portfolio -->
+<section id="portfolio">
+     <div class="wrap">
+          <div class="section-head reveal">
+               <h2>Graphic work</h2>
+               <ul class="filter-tabs">
+                    <li><a href="index.html">Main projects</a></li>
+                    <li><a href="UI.html">UI</a></li>
+                    <li class="is-active"><a href="Graphic.html">Graphic</a></li>
                </ul>
           </div>
 
-  </div>
-</div>
+          <div class="portfolio-grid">
 
-<!-- Home Section -->
+               <a class="project-card reveal" href="6single-project - graphicdesign.html">
+                    <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+                    <div class="project-card__media">
+                         <img src="images/logo-cover" alt="Graphic design gallery cover" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                         <span class="project-card__tag">Branding · Visual · Social</span>
+                         <h3 class="project-card__title">Graphic Design Gallery</h3>
+                    </div>
+               </a>
 
-<section id="home">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-12 col-sm-12">
-                    <h2>Hi, I'm a UI/UX designer. <br>Looking for exciting opportunities to put my skills to use!</h2>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-<!-- Portfolio Section -->
-
-<section id="portfolio">
-
-     <div class="container">
-      
-          <ul class="filter-menu">
-               
-                    <ul class="nav navbar-nav navbar-right">
-                         <li class="active"><a href="index.html">Main projects</a></li>
-                         <li><a href="UI.html">Ui</a></li>
-                         <li><a href="Graphic.html">Graphic</a></li>
-</ul>
-</div>
-
-     <div class="container">
-          
-          <div class="row">
-
-           
-
-               <div class="col-md-4 col-sm-6">
-          
-                    <a href="6single-project - graphicdesign.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/logo-cover" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3>Graphic Design Gallery</h3>
-                                             <h6>Branding, Visual, UI, Product, Social Media, etc </h6>
-                                        </div>
-                                   </div>
-                         </div>
-                        
-                    </a>
-               </div>
-
-               <div class="col-md-12 col-sm-12 text-center">
-                    <h4>hello, if you interest working together. Just send me an email, let's talk about everything!</h4>
-               </div>
-               
+               <a class="project-card reveal" href="10single-project-visit card.html">
+                    <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+                    <div class="project-card__media">
+                         <img src="images/CARD.png" alt="Personal business card cover" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                         <span class="project-card__tag">Brand Identity</span>
+                         <h3 class="project-card__title">Personal business card</h3>
+                    </div>
+               </a>
 
           </div>
      </div>
 </section>
 
-<!-- Footer Section -->
-<footer>
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-3 col-sm-3">
-                    
-                    <a href="index.html"><img src="assest/Jessicabrand.png"/></a> 
-               </div>
-
-              <div class="col-md-4 col-sm-4">
-                     <p>Dublin, Ireland</p> 
-               </div>
-
-               <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
-                    <p><a href="https://www.linkedin.com/in/jessicabpontes/">Check my Linkedin </a></p>
-                
-               </div>
-
-               
+<!-- Footer -->
+<footer class="site-footer">
+     <div class="wrap site-footer__inner">
+          <a href="index.html" class="site-footer__brand" aria-label="Jessica Pontes — home">
+               <img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo">
+          </a>
+          <div class="site-footer__meta">
+               <span>Dublin, Ireland</span>
+               <a href="https://www.linkedin.com/in/jessicabpontes/" target="_blank" rel="noopener">Check my LinkedIn</a>
           </div>
      </div>
 </footer>
 
-
 <!-- SCRIPTS -->
+<script>
+  (function () {
+    var nav = document.getElementById('siteNav');
+    var onScroll = function () {
+      nav.classList.toggle('is-scrolled', window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
+    } else {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+    }
+  })();
+</script>
 
 </body>
 </html>

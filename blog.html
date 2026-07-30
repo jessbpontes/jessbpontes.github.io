@@ -12,204 +12,161 @@
 
 <title>Jessica Pontes -  Portfolio</title>
 
+
+<!-- Favicons — abstract -->
+<link rel="icon" type="image/svg+xml" href="assest/brand%20abstract/brand-32-abs.svg">
+<link rel="apple-touch-icon" href="assest/brand%20abstract/brand-120-abs.svg">
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+
+<!-- Modern UI refresh -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/modern.css">
 
 </head>
 <body>
 
-<!-- PRE LOADER -->
-
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-wordpress">
-          <span class="sk-inner-circle"></span>
+<!-- Navigation -->
+<header class="site-nav" id="siteNav">
+     <div class="wrap site-nav__inner">
+          <a href="index.html" class="site-nav__brand" aria-label="Jessica Pontes — home">
+               <img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo">
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+               </svg>
+          </button>
+          <ul class="site-nav__links" id="navLinks">
+               <li><a href="index.html">Portfolio</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="blog.html" aria-current="page">Blog</a></li>
+          </ul>
      </div>
-</div>
+</header>
 
-<!-- Navigation section  -->
+<!-- Hero -->
+<section class="hero hero--sm">
+     <div class="wrap reveal">
+          <span class="hero__eyebrow">Words</span>
+          <h1>Blog &amp; <span class="accent">notes</span>.</h1>
+          <p class="hero__lead">
+               Exploring through words to find clarity — thoughts on design practice, growth, research and building products that matter.
+          </p>
+     </div>
+</section>
 
-<!-- desktop header -->
-
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-     <div class="container">
-
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-            <a href="index.html" class="navbar-brand"><img src="assest/Jessicabrand.png"/></a> 
-
-          <!--     <span class="navbar-text"> 
-                   JESSICA PONTES
-                  </span>  --->
-
-          </div>
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    
-               </ul>
-          </div>
-
-  </div>
-</div>
-
-<!-- Blog Section -->
-
+<!-- Blog -->
 <section id="blog">
-     <div class="container">
-         <div class="row">
-             <div class="col-md-offset-1 col-md-10 col-sm-12">
-                 <div class="section-title">
-                     <h3>Latest blog posts</h3>
-                     <div>
-                         <h2 style="font-style: italic;">"Exploring through words, I find clarity,
-                             Writing my thoughts, it sets me free.
-                             Navigating goals, tracking my way,
-                             In prose I find practice, day by day."</h2>
-                     </div>
-                 </div>
- 
-                 <!-- Post 1 -->
-                 <div class="blog-post-thumb">
-                     <div class="blog-post-image">
-                         <a href="Blog-post - Functionvsaesthetics">
-                             <img src="images/image -jess flow 8.jpg" class="img-responsive" alt="Blog Image">
-                         </a>
-                     </div>
-                     <div class="blog-post-title">
-                         <h3><a href="Blog-post - Functionvsaesthetics">Balancing Aesthetics and Functionality in Finance</a></h3>
-                     </div>
-                     <div class="blog-post-format">
-                         <span><i class="fa fa-date"></i> Sep 12, 2023</span>
-                     </div>
-                     <div class="blog-post-des">
-                         <p>The ideal digital product seamlessly integrates both aesthetic and functional design elements. For instance, Apple's iPhone exemplifies this balance, blending sleek design with innovative features. However, in industries like finance and cash forecasting, functionality often takes the lead, prioritizing task efficiency and regulatory compliance.</p>
-                         <a href="Blog-post - Functionvsaesthetics" class="btn btn-default">Read more</a>
-                     </div>
-                 </div>
- 
-                 <!-- Post 2 -->
-                 <div class="blog-post-thumb">
-                     <div class="blog-post-image">
-                         <a href="Blog-post - junior to senior.html">
-                             <img src="images/image -jess flow (1).jpg" class="img-responsive" alt="myself creating a journey flow on a window">
-                         </a>
-                     </div>
-                     <div class="blog-post-title">
-                         <h3><a href="Blog-post - junior to senior.html">Evolving from Junior to Senior: A Personal Journey of Growth.</a></h3>
-                     </div>
-                     <div class="blog-post-format">
-                         <span><i class="fa fa-date"></i> Jan 15, 2024</span>
-                     </div>
-                     <div class="blog-post-des">
-                         <p>In essence, the transition from junior to senior designer isn't merely about acquiring technical skills or earning a prestigious title—it's about embodying a mindset of continual growth and adaptation.</p>
-                         <a href="Blog-post - junior to senior.html" class="btn btn-default">Read more</a>
-                     </div>
-                 </div>
- 
-                 <!-- Post 3 -->
-                 <div class="blog-post-thumb">
-                     <div class="blog-post-image">
-                         <a href="Blog-post - remote testing.html">
-                             <img src="images/image -jess flow 6.jpg" class="img-responsive" alt="Blog Image">
-                         </a>
-                     </div>
-                     <div class="blog-post-title">
-                         <h3><a href="Blog-post - remote testing.html">3 Things to Do Before Remote Testing</a></h3>
-                     </div>
-                     <div class="blog-post-format">
-                         <span><i class="fa fa-date"></i> Feb 02, 2021</span>
-                     </div>
-                     <div class="blog-post-des">
-                         <p>Respect participants' time. Be mindful of your users' time and keep your tests short. If you do have many tasks and scenarios that you want to test, divide them by categories and split them up into different usability sessions. It can also help to avoid internet connection problems.</p>
-                         <a href="Blog-post - remote testing.html" class="btn btn-default">Read more</a>
-                     </div>
-                 </div>
- 
-                 <!-- Post 4 (commented out)
-                 <div class="blog-post-thumb">
-                     <div class="blog-post-image">
-                         <a href="NAMEEEEEE.html">
-                             <img src="images/image -jess flow 3.jpg" class="img-responsive" alt="Blog Image">
-                         </a>
-                     </div>
-                     <div class="blog-post-title">
-                         <h3><a href="NAMEEEEEE.html">Project Review: Viajant App</a></h3>
-                     </div>
-                     <div class="blog-post-format">
-                         <span><i class="fa fa-date"></i> Apr 13, 2022</span>
-                     </div>
-                     <div class="blog-post-des">
-                         <p>In this article, I will recount my journey and experience in my graduation project. The text was divided into stages, covering what I judged to be the most relevant parts of the research development.</p>
-                         <a href="single-post - Case study 1.html" class="btn btn-default">Read more</a>
-                     </div>
-                 </div>
-                 -->
- 
-                 <!-- Post 5 -->
-                 <div class="blog-post-thumb">
-                     <div class="blog-post-image">
-                         <a href="Blog-post - coding.html">
-                             <img src="images/image -jess flow 7.jpg" class="img-responsive" alt="Blog Image">
-                         </a>
-                     </div>
-                     <div class="blog-post-title">
-                         <h3><a href="Blog-post - coding.html">Coding This Portfolio</a></h3>
-                     </div>
-                     <div class="blog-post-format">
-                         <span><i class="fa fa-date"></i> Dec 13, 2019</span>
-                     </div>
-                     <div class="blog-post-des">
-                         <p>Practicing how to code HTML/CSS pages: A brief story of how I put together this portfolio.</p>
-                         <a href="Blog-post - coding.html" class="btn btn-default">Read more</a>
-                     </div>
-                 </div>
- 
-             </div>
-         </div>
+     <div class="wrap">
+          <div class="blog-list">
+
+               <article class="blog-card reveal">
+                    <a class="blog-card__media" href="Blog-post - Functionvsaesthetics.html">
+                         <img src="images/image -jess flow 8.jpg" alt="Balancing aesthetics and functionality" loading="lazy">
+                    </a>
+                    <div class="blog-card__body">
+                         <span class="blog-card__meta">Sep 12, 2023 · Design practice</span>
+                         <h2 class="blog-card__title"><a href="Blog-post - Functionvsaesthetics.html">Balancing Aesthetics and Functionality in Finance</a></h2>
+                         <p class="blog-card__excerpt">The ideal digital product seamlessly integrates both aesthetic and functional design. In industries like finance and cash forecasting, functionality often takes the lead — prioritising task efficiency and regulatory compliance.</p>
+                         <a class="blog-card__more" href="Blog-post - Functionvsaesthetics.html">Read more →</a>
+                    </div>
+               </article>
+
+               <article class="blog-card reveal">
+                    <a class="blog-card__media" href="Blog-post - junior to senior.html">
+                         <img src="images/image -jess flow (1).jpg" alt="Journey from junior to senior designer" loading="lazy">
+                    </a>
+                    <div class="blog-card__body">
+                         <span class="blog-card__meta">Jan 15, 2024 · Growth</span>
+                         <h2 class="blog-card__title"><a href="Blog-post - junior to senior.html">Evolving from Junior to Senior: A Personal Journey of Growth</a></h2>
+                         <p class="blog-card__excerpt">The transition from junior to senior designer isn't merely about acquiring technical skills or earning a title — it's about embodying a mindset of continual growth and adaptation.</p>
+                         <a class="blog-card__more" href="Blog-post - junior to senior.html">Read more →</a>
+                    </div>
+               </article>
+
+               <article class="blog-card reveal">
+                    <a class="blog-card__media" href="Blog-post - remote testing.html">
+                         <img src="images/image -jess flow 6.jpg" alt="Notes before a remote user test" loading="lazy">
+                    </a>
+                    <div class="blog-card__body">
+                         <span class="blog-card__meta">Feb 02, 2021 · Research</span>
+                         <h2 class="blog-card__title"><a href="Blog-post - remote testing.html">3 Things to Do Before Remote Testing</a></h2>
+                         <p class="blog-card__excerpt">Respect participants' time. Keep tests short. If you have many tasks and scenarios to cover, divide them and split them across separate sessions — it also helps avoid internet connection issues.</p>
+                         <a class="blog-card__more" href="Blog-post - remote testing.html">Read more →</a>
+                    </div>
+               </article>
+
+               <article class="blog-card reveal">
+                    <a class="blog-card__media" href="Blog-post - coding.html">
+                         <img src="images/image -jess flow 7.jpg" alt="Coding the portfolio" loading="lazy">
+                    </a>
+                    <div class="blog-card__body">
+                         <span class="blog-card__meta">Dec 13, 2019 · Craft</span>
+                         <h2 class="blog-card__title"><a href="Blog-post - coding.html">Coding This Portfolio</a></h2>
+                         <p class="blog-card__excerpt">Practising how to code HTML/CSS pages — a brief story of how I put together this portfolio and what I learned along the way.</p>
+                         <a class="blog-card__more" href="Blog-post - coding.html">Read more →</a>
+                    </div>
+               </article>
+
+          </div>
      </div>
- </section>
+</section>
 
-
-<br>
-<!-- Footer Section -->
-<footer>
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-3 col-sm-3">
-                    
-                    <a href="index.html"><img src="assest/Jessicabrand.png"/></a> 
-               </div>
-
-               <div class="col-md-4 col-sm-4">
-                     <p>Dublin, Ireland</p> 
-               </div>
-
-               <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
-                    <p><a href="https://www.linkedin.com/in/jessicabpontes/">Check my Linkedin </a></p>
-                
-               </div>
-
-               
+<!-- Footer -->
+<footer class="site-footer">
+     <div class="wrap site-footer__inner">
+          <a href="index.html" class="site-footer__brand" aria-label="Jessica Pontes — home">
+               <img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo">
+          </a>
+          <div class="site-footer__meta">
+               <span>Dublin, Ireland</span>
+               <a href="https://www.linkedin.com/in/jessicabpontes/" target="_blank" rel="noopener">Check my LinkedIn</a>
           </div>
      </div>
 </footer>
 
 <!-- SCRIPTS -->
+<script>
+  (function () {
+    var nav = document.getElementById('siteNav');
+    var onScroll = function () {
+      nav.classList.toggle('is-scrolled', window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
+    } else {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+    }
+  })();
+</script>
 
 </body>
 </html>

@@ -12,219 +12,193 @@
 
 <title>Jessica Pontes -  Portfolio</title>
 
+<!-- Favicons — abstract -->
+<link rel="icon" type="image/svg+xml" href="assest/brand%20abstract/brand-32-abs.svg">
+<link rel="apple-touch-icon" href="assest/brand%20abstract/brand-120-abs.svg">
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+
+<!-- Modern UI refresh (homepage) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/modern.css">
 
 </head>
 <body>
 
-<!-- PRE LOADER -->
-
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-wordpress">
-          <span class="sk-inner-circle"></span>
+<!-- Navigation -->
+<header class="site-nav" id="siteNav">
+     <div class="wrap site-nav__inner">
+          <a href="index.html" class="site-nav__brand" aria-label="Jessica Pontes — home">
+               <img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo">
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+               </svg>
+          </button>
+          <ul class="site-nav__links" id="navLinks">
+               <li><a href="index.html" aria-current="page">Portfolio</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="blog.html">Blog</a></li>
+          </ul>
      </div>
-</div>
+</header>
 
-<!-- Navigation section  -->
+<!-- Hero -->
+<section class="hero">
+     <div class="wrap reveal">
+          <span class="hero__eyebrow">Senior Product Designer</span>
+          <h1>Hi, I'm <span class="accent">Jess</span>.</h1>
+          <p class="hero__lead">
+               I navigate complex problem spaces and business requirements to drive real impact —
+               designing more comfortable spaces for people to live, work, and interact.
+               My approach blends collaboration, data-driven insights, and a deep understanding of
+               user psychology to create seamless experiences.
+          </p>
+     </div>
+</section>
 
-<!-- desktop header -->
-
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-     <div class="container">
-
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-            <a href="index.html" class="navbar-brand"><img src="assest/Jessicabrand.png"/></a> 
-
-          <!--     <span class="navbar-text"> 
-                   JESSICA PONTES
-                  </span>  --->
-
-          </div>
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    
+<!-- Portfolio -->
+<section id="portfolio">
+     <div class="wrap">
+          <div class="section-head reveal">
+               <h2>Selected work</h2>
+               <ul class="filter-tabs">
+                    <li class="is-active"><a href="index.html">Main projects</a></li>
+                    <li><a href="UI.html">UI</a></li>
+                    <li><a href="Graphic.html">Graphic</a></li>
                </ul>
           </div>
 
-  </div>
-</div>
-<!-- Home Section -->
+          <div class="portfolio-grid">
 
-<section id="home">
-     <div class="container">
-          <div class="row">
+               <a class="project-card reveal" href="1single-project - GT.html">
+                    <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+                    <div class="project-card__media">
+                         <img src="images/ca COVER.png" alt="Optimizing model management case study cover" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                         <span class="project-card__tag">2024 · UX / Strategy</span>
+                         <h3 class="project-card__title">Optimizing Model Management for Enhanced User Experience</h3>
+                    </div>
+               </a>
 
-               <section id="home">
-     <div class="container">
-          <div class="row">
-               <div class="col-md-12 col-sm-12">
-                    <h2>Hi, I'm Jess,</h2> 
-                    <h3> Senior Product Designer. </h3>
-                    <h2 class="intro-paragraph">  As a designer who navigates complex problem spaces and business requirements to drive real impact,
- I spend my days designing more comfortable spaces for people to live, work, and interact with others! 
-                         <br>My design approach blends collaboration, data-driven insights, and a deep understanding of user psychology to create seamless experiences.</h2>
-               </div>
+               <a class="project-card reveal" href="2single-project - viajant.html">
+                    <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+                    <div class="project-card__media">
+                         <img src="images/viajant-cover" alt="Travel app research and conception cover" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                         <span class="project-card__tag">Product Design</span>
+                         <h3 class="project-card__title">Research &amp; Conception of a travel app</h3>
+                    </div>
+               </a>
 
-          </div>
-     </div>
-</section>
+               <a class="project-card reveal" href="3single-project - liftseller.html">
+                    <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+                    <div class="project-card__media">
+                         <img src="images/liftpay-cover" alt="Mobile app flow definitions cover" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                         <span class="project-card__tag">UX / UI Design</span>
+                         <h3 class="project-card__title">Analysis and flow definitions mobile app</h3>
+                    </div>
+               </a>
 
-<!-- Portfolio Section -->
+               <a class="project-card reveal" href="12single-project - WhyzeHealth.html">
+                    <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+                    <div class="project-card__media">
+                         <img src="images/whyze COVER.png" alt="Health platform discovery and delivery cover" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                         <span class="project-card__tag">2024 · Product / Service Design</span>
+                         <h3 class="project-card__title">End to End discovery and delivery of Health platform</h3>
+                    </div>
+               </a>
 
+               <a class="project-card reveal" href="1single-project-autoglaasonline.html">
+                    <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+                    <div class="project-card__media">
+                         <img src="images/autoglassonline_cover-mobile-web.jpg" alt="B2C ecommerce redesign cover" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                         <span class="project-card__tag">UX / UI Design</span>
+                         <h3 class="project-card__title">Enhancing performance and visual of B2C ecommerce</h3>
+                    </div>
+               </a>
 
-
-<section id="portfolio">
-
-     <div class="container">
-      
-          <ul class="filter-menu">
-               
-                    <ul class="nav navbar-nav navbar-right">
-                         <li class="active"><a href="index.html">Main projects</a></li>
-                         <li><a href="UI.html">Ui</a></li>
-                         <li><a href="Graphic.html">Graphic</a></li>
-</ul>
-</div>
-
-     <div class="container">
-          
-          <div class="row">
-
-<div class="col-md-4 col-sm-6">
-          
-                    <a href="1single-project - GT.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/ca COVER.png" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3>Optimizing Model Management for Enhanced User Experience</h3>
-                                             <h6>2024 UX/Strategy Project</h6>
-                                        </div>
-                                   </div>
-                         </div>
-                    </a>
-               </div>
-               
-          <div class="col-md-4 col-sm-6">
-                    <a href="2single-project - viajant.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/viajant-cover" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3>Research & Conception of a travel app</h3>
-                                             <h6>PRODUCT DESIGN</h6>
-                                        </div>
-                                   </div>
-                         </div>
-                    </a>
-               </div>
-
-               <div class="col-md-4 col-sm-6">
-                    <a href="3single-project - liftseller.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/liftpay-cover" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3>Analysis and flow definitions mobile app</h3>
-                                             <h6>UX/UI DESIGN</h6>
-                                        </div>
-                                   </div>
-                         </div>
-                    </a>
-               </div>
-
-              <div class="col-md-4 col-sm-6">
-          
-                    <a href="12single-project - WhyzeHealth.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/whyze COVER.png" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3> End to End discovery and delivery of Health platform</h3>
-                                             <h6>2024 PRODUCT/SERVICE DESIGN</h6>
-                                        </div>
-                                   </div>
-                         </div>
-                    </a>
-               </div>
-               
-                     <div class="col-md-4 col-sm-6">
-                    <a href="1single-project-autoglaasonline.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/autoglassonline_cover-mobile-web.jpg" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3>Enchancing performance and visual of B2C ecommerce</h3>
-                                             <h6>UX/UI DESIGN</h6>
-                                        </div>
-                                   </div>
-                         </div>
-                    </a>
-               </div>
-
-               <div class="col-md-4 col-sm-6">
-                    <a href="5single-project - vfs.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/made4u/Made4u-cover.png" class="img-responsive" alt="Portfolio">
-                                   <div class="portfolio-overlay">
-                                        <div class="portfolio-item">
-                                             <h3> End to End process of Made for you platform</h3>
-                                             <h6>SERVICE DESIGN</h6>
-                                        </div>
-                                   </div>
-                         </div>
-                    </a>
-               </div>
-
-              
-
-        <!--      <div class="col-md-12 col-sm-12 text-center">
-                    <h4> Hello, if you are interested in working together. Just send me an email, let's talk about everything!</h4>
-               </div> Footer Section -->  
-               
+               <a class="project-card reveal" href="5single-project - vfs.html">
+                    <span class="project-card__arrow" aria-hidden="true">&#8599;</span>
+                    <div class="project-card__media">
+                         <img src="images/made4u/Made4u-cover.png" alt="Made for you platform end to end cover" loading="lazy">
+                    </div>
+                    <div class="project-card__body">
+                         <span class="project-card__tag">Service Design</span>
+                         <h3 class="project-card__title">End to End process of Made for you platform</h3>
+                    </div>
+               </a>
 
           </div>
      </div>
 </section>
 
-<!-- Footer Section -->
-<footer>
-     <div class="container">
-          <div class="row">
-               <div class="col-md-3 col-sm-3">
-                    <a href="index.html"><img src="assest/Jessicabrand.png"/></a> 
-               </div>
-               <div class="col-md-4 col-sm-4">
-                    <p style="margin-left: 50px;">Dublin, Ireland</p> <!-- Adjust margin-left as needed -->
-               </div>
-               <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
-                    <p style="margin-right: 50px;"><a href="https://www.linkedin.com/in/jessicabpontes/">Check my Linkedin </a></p>
-                 
-               </div>
+<!-- Footer -->
+<footer class="site-footer">
+     <div class="wrap site-footer__inner">
+          <a href="index.html" class="site-footer__brand" aria-label="Jessica Pontes — home">
+               <img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo">
+          </a>
+          <div class="site-footer__meta">
+               <span>Dublin, Ireland</span>
+               <a href="https://www.linkedin.com/in/jessicabpontes/" target="_blank" rel="noopener">Check my LinkedIn</a>
           </div>
      </div>
 </footer>
 
-
-
 <!-- SCRIPTS -->
+<script>
+  // Sticky nav border on scroll
+  (function () {
+    var nav = document.getElementById('siteNav');
+    var onScroll = function () {
+      nav.classList.toggle('is-scrolled', window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
+    // Mobile menu toggle
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    // Scroll reveal
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
+    } else {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+    }
+  })();
+</script>
 
      <script type="module">
   // Import the functions you need from the SDKs you need

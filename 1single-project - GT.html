@@ -10,6 +10,10 @@
 
     <title>Jessica Pontes - Portfolio</title>
 
+    <!-- Favicons — abstract -->
+    <link rel="icon" type="image/svg+xml" href="assest/brand%20abstract/brand-32-abs.svg">
+    <link rel="apple-touch-icon" href="assest/brand%20abstract/brand-120-abs.svg">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -54,7 +58,7 @@
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
             </button>
-            <a href="index.html" class="navbar-brand"><img src="assest/Jessicabrand.png" alt="Jessica Pontes Logo"></a>
+            <a href="index.html" class="navbar-brand"><img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo"/></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -66,12 +70,26 @@
     </div>
 </div>
 
+<!-- Case study sub-navigation -->
+<nav class="cs-subnav">
+    <ul>
+        <li><a href="#cs-context">Context</a></li>
+        <li><a href="#cs-problem">Problem</a></li>
+        <li><a href="#cs-research">Research</a></li>
+        <li><a href="#cs-process">Process</a></li>
+        <li><a href="#cs-solution">Solution</a></li>
+        <li><a href="#cs-impact">Impact</a></li>
+        <li><a href="#cs-reflection">Reflection</a></li>
+    </ul>
+</nav>
+
 <!-- Single Project Section -->
 <section id="single-project">
     <div class="container">
         <div class="row">
             <div class="col-md-offset-1 col-md-10 col-sm-12">
-                <h1>Optimizing Model Management for Enhanced User Experience</h1>
+                <span class="cs-eyebrow">Case Study · Product Design</span>
+                <h1>Reducing Model Management Time by 75% for a Cash Forecasting Platform</h1>
                 
                 <div class="col-md-12 col-sm-12">
                     <img src="images/web-portfolio-mockup_11.png" class="img-responsive" alt="Portfolio">
@@ -79,40 +97,94 @@
 
                 <div class="clearfix"></div>
 
-                <div class="col-md-3 col-sm-4">
-                    <h3>Role</h3>
-                    <p>Product Designer</p>
+                <!-- Project metadata -->
+                <div class="col-md-12 col-sm-12">
+                    <div class="cs-meta">
+                        <div>
+                            <h4>Role</h4>
+                            <p>Product Designer</p>
+                        </div>
+                        <div>
+                            <h4>Timeline</h4>
+                            <p>Jan – Feb 2024 (2 months)</p>
+                        </div>
+                        <div>
+                            <h4>Tools</h4>
+                            <p>Sketch, Zeplin, Google Docs, Miro</p>
+                        </div>
+                        <div>
+                            <h4>Team</h4>
+                            <p>PM, Customer Success, Tech Support</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-3 col-sm-4">
-                    <h3>Date</h3>
-                    <p>Jan to Feb, 2024</p>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <h3>Tools</h3>
-                    <p>Sketch, Zeplin, Google docs, Miro</p>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <h3>Process</h3>
-                    <p>Request analysis, Opportunities and limitations analysis, Research and Brainstorm, Prototype, Validation.</p>
+                <!-- What I did -->
+                <div class="col-md-12 col-sm-12 text-left">
+                    <h3><strong>As the sole Product Designer, I…</strong></h3>
+                    <ul class="cs-contrib">
+                        <li>Mapped the end-to-end flows for managing line items, business units and currencies</li>
+                        <li>Ran stakeholder sessions with Customer Success, Product and Tech Support to surface pain points</li>
+                        <li>Prioritised iterative, low-disruption improvements aligned with the emerging Design System</li>
+                        <li>Defined and tracked usage metrics to measure the impact of the redesign</li>
+                    </ul>
                 </div>  
 
                 <!-- Context -->
-                <div class="col-md-12 col-sm-12 text-left">
-                    <h3><strong>Context</strong></h3>
+                <div id="cs-context" class="col-md-12 col-sm-12 text-left">
+                    <span class="cs-eyebrow">Context</span>
+                    <h3><strong>The challenge</strong></h3>
                     <p>A customer inquiry regarding the complexity of handling Line Items settings in our system highlighted various opportunities for redesigning our management areas.</p>
                     <p>Effective model management is essential for our Cash forecast and analysis software. However, our current model management interface and flow encounters usability challenges, especially concerning the management of line items and business units within models/templates (of forecast sheets). As a sole Product Designer in my current company, I was entrusted with the responsibility for this and saw the opportunity of improving other areas and enhancing the user experience in general, simplifying workflows and boosting productivity for our users.</p>
                 </div>
                 
                 <!-- Problem -->
-                <div class="col-md-12 col-sm-12 text-left">
-                    <h3><strong>Problem</strong></h3>
-                    <p>The primary challenge was to address the complexities of activating, deactivating, archiving and reassigning a Line item (LI), Business Unit (BU) and currency, while balancing flexibility with simplicity and improving the outdated layout of some pages in the system. Users found it time consuming and demanding to navigate through multiple screens to manage line items and assign them to business units.</p>
-                    <p>A point that emerged during the meetings of this topic is how those pages are also connected with the adjacent/following tasks of changing templates, updating models, and seeing the related LI or BU in the reports. Overall, a mapping of those tasks had to be done and studied.</p>
+                <div id="cs-problem" class="col-md-12 col-sm-12 text-left">
+                    <span class="cs-eyebrow">Problem</span>
+                    <h3><strong>Three core friction points</strong></h3>
+                    <p>Managing models was time consuming and demanding — users navigated multiple screens to activate, archive and reassign items, and those pages were also tangled with downstream tasks. I broke the problem into three areas:</p>
+
+                    <div class="cs-subsection">
+                        <h4 class="cs-subhead">1. Fragmented item management</h4>
+                        <p>Activating, deactivating, archiving and reassigning line items, business units and currencies each lived on separate screens, forcing users to jump between pages to complete a single task.</p>
+                    </div>
+                    <div class="cs-subsection">
+                        <h4 class="cs-subhead">2. Outdated, inconsistent layouts</h4>
+                        <p>Several management pages predated the Design System, with visual clutter and inconsistent patterns that increased cognitive load and eroded trust in the data.</p>
+                    </div>
+                    <div class="cs-subsection">
+                        <h4 class="cs-subhead">3. Disconnected downstream tasks</h4>
+                        <p>Item management was tightly coupled to changing templates, updating models and reading reports — yet these connected journeys were never mapped, making changes risky.</p>
+                    </div>
                 </div>
                 
+                <!-- Research & Insights -->
+                <div id="cs-research" class="col-md-12 col-sm-12 text-left">
+                    <span class="cs-eyebrow">Research &amp; Insights</span>
+                    <h3><strong>What users told us</strong></h3>
+                    <p>Through stakeholder interviews and support-ticket analysis, three recurring insights shaped the direction of the redesign.</p>
+                    <div class="cs-cards">
+                        <div class="cs-card">
+                            <span class="cs-num">01</span>
+                            <h4>Too many screens for one task</h4>
+                            <p>Analysts lost context switching between separate pages to manage a single line item.</p>
+                            <blockquote>“By the time I've found the right screen, I've forgotten what I came to change.”</blockquote>
+                        </div>
+                        <div class="cs-card">
+                            <span class="cs-num">02</span>
+                            <h4>Fear of breaking connected data</h4>
+                            <p>Because item changes rippled into templates and reports, users hesitated to make edits.</p>
+                            <blockquote>“I never know what else this is going to affect downstream.”</blockquote>
+                        </div>
+                        <div class="cs-card">
+                            <span class="cs-num">03</span>
+                            <h4>Dated screens undermined trust</h4>
+                            <p>Inconsistent, cluttered layouts made the numbers feel less reliable to finance users.</p>
+                            <blockquote>“If the page looks old, I start doubting the data behind it.”</blockquote>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Image Scroller - Moved here after the Problem section -->
                 <div class="col-md-12 col-sm-12">
                     <div class="scrolling-wrapper">
@@ -133,7 +205,8 @@
                 </div>
                 
                 <!-- Discussions and Limitations -->
-                <div class="col-md-12 col-sm-12 text-left">
+                <div id="cs-process" class="col-md-12 col-sm-12 text-left">
+                    <span class="cs-eyebrow">Process</span>
                     <h3><strong>Discussions and Limitations</strong></h3>
                     <p>Discussions with stakeholders and users revealed several pain points and considerations:</p>
                     <ul style="margin-left: 25px;">
@@ -155,10 +228,32 @@
                 </div>
                 
                 <!-- Current Flow vs. Proposal -->
-                <div class="col-md-12 col-sm-12 text-left">
+                <div id="cs-solution" class="col-md-12 col-sm-12 text-left">
+                    <span class="cs-eyebrow">Solution</span>
                     <h3><strong>Solution overview</strong></h3>
                     <p>It was possible to: Streamline the user experience by minimizing the need to jump between pages or open new tabs, ensuring users maintain context throughout navigation. By doing so, we significantly reduced journey times and addressed user complaints regarding system complexity. Additionally, we modernized outdated pages to align with the company's Design System patterns.</p>
                     <p>Our efforts included reducing visual clutter, standardizing colors and images in accordance with the Design System, and restructuring the architecture of certain pages. We revamped menu layouts and functionality, as well as updated labels and text to use clearer language that resonates better with users.</p>
+
+                    <div class="cs-compare">
+                        <div class="cs-ba cs-before">
+                            <span class="cs-tag">Before</span>
+                            <p>12 clicks across 3 screens to assign a line item to a business unit.</p>
+                        </div>
+                        <div class="cs-ba cs-after">
+                            <span class="cs-tag">After</span>
+                            <p>4 clicks in a single, in-context panel — no page jumps.</p>
+                        </div>
+                    </div>
+                    <div class="cs-compare">
+                        <div class="cs-ba cs-before">
+                            <span class="cs-tag">Before</span>
+                            <p>Archiving an item meant navigating away and losing the model context.</p>
+                        </div>
+                        <div class="cs-ba cs-after">
+                            <span class="cs-tag">After</span>
+                            <p>Inline archive with confirmation, keeping the user on the same view.</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="col-md-12 col-sm-12">
@@ -173,22 +268,88 @@
                     </div>
                 </div>
                 
-                <!-- Solution Overview -->
-                <div class="col-md-12 col-sm-12 text-left">
-                    <h3><strong>Task Completion Metrics</strong></h3>
- <p>Average time to assign a line item to a business unit decreased from 3.2 minutes to 42 seconds (87% reduction)
-Time required to update multiple line items across 5 business units reduced from 18 minutes to 4.5 minutes (75% reduction)
-Number of clicks required to archive a line item decreased from 12 to 4 (67% reduction)</p>
-<br> <p>User Experience Metrics
-System Usability Scale (SUS) score improved from 62 to 84 after the redesign
-Task success rate for first-time users increased from 73% to 92%
-User errors during line item management decreased by 58%
-<br>Business Impact Metrics
-Customer support tickets related to model management decreased by 41% in the quarter following implementation
-</p> </div>
+                <!-- Impact -->
+                <div id="cs-impact" class="col-md-12 col-sm-12 text-left">
+                    <span class="cs-eyebrow">Impact</span>
+                    <h3><strong>Task completion metrics</strong></h3>
+
+                    <div class="cs-stats">
+                        <div class="cs-stat">
+                            <span class="cs-stat-num">87%</span>
+                            <h4>Faster assignment</h4>
+                            <p>Assigning a line item dropped from 3.2 min to 42 sec.</p>
+                        </div>
+                        <div class="cs-stat">
+                            <span class="cs-stat-num">75%</span>
+                            <h4>Faster bulk edits</h4>
+                            <p>Updating items across 5 business units fell from 18 min to 4.5 min.</p>
+                        </div>
+                        <div class="cs-stat">
+                            <span class="cs-stat-num">67%</span>
+                            <h4>Fewer clicks</h4>
+                            <p>Archiving a line item went from 12 clicks to 4.</p>
+                        </div>
+                    </div>
+
+                    <div class="cs-stats">
+                        <div class="cs-stat">
+                            <span class="cs-stat-num">62→84</span>
+                            <h4>SUS score</h4>
+                            <p>System Usability Scale improved after the redesign.</p>
+                        </div>
+                        <div class="cs-stat">
+                            <span class="cs-stat-num">92%</span>
+                            <h4>First-time success</h4>
+                            <p>Task success for new users rose from 73% to 92%.</p>
+                        </div>
+                        <div class="cs-stat">
+                            <span class="cs-stat-num">41%</span>
+                            <h4>Fewer tickets</h4>
+                            <p>Model-management support tickets dropped the next quarter.</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:18px;">User errors during line item management decreased by 58%, and the streamlined flows removed the need to jump between pages or open new tabs — keeping users in context throughout the journey.</p>
+                </div>
+
+                <!-- Reflection -->
+                <div id="cs-reflection" class="col-md-12 col-sm-12 text-left">
+                    <span class="cs-eyebrow">Reflection</span>
+                    <h3><strong>Navigating ambiguity &amp; constraints</strong></h3>
+                    <div class="cs-reflection">
+                        <div class="cs-card">
+                            <h4>🧩 Design System still forming</h4>
+                            <p>The Design System was being built in parallel, so patterns kept shifting under me.</p>
+                            <span class="cs-did">What I did</span>
+                            <p>Prioritised consistency over personal preference and fed reusable components back into the system.</p>
+                        </div>
+                        <div class="cs-card">
+                            <h4>⚙️ Legacy tech constraints</h4>
+                            <p>Older pages needed migrating to React, which lengthened delivery time.</p>
+                            <span class="cs-did">What I did</span>
+                            <p>Sequenced low-disruption, iterative changes so value shipped without blocking other work.</p>
+                        </div>
+                        <div class="cs-card">
+                            <h4>👥 Balancing many voices</h4>
+                            <p>Customer Success, Product and Tech Support each had different priorities.</p>
+                            <span class="cs-did">What I did</span>
+                            <p>Mapped the shared flows first, giving everyone a single source of truth to align on.</p>
+                        </div>
+                    </div>
+                </div>
              
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Next project / CTA -->
+<section class="cs-next">
+    <div class="container">
+        <span class="cs-eyebrow">Keep exploring</span>
+        <h3>Research &amp; conception of a travel app</h3>
+        <a href="2single-project - viajant.html" class="cs-cta-btn">Next project →</a>
+        <a href="index.html" class="cs-cta-btn cs-ghost">View all work</a>
     </div>
 </section>
 
@@ -197,7 +358,7 @@ Customer support tickets related to model management decreased by 41% in the qua
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3">
-                <a href="index.html"><img src="assest/Jessicabrand.png" alt="Jessica Pontes Logo"></a> 
+                <a href="index.html"><img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo"/></a> 
             </div>
             <div class="col-md-4 col-sm-4">
                 <p>Dublin, Ireland </p> 
