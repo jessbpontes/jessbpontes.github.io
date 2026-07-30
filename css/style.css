@@ -17,13 +17,13 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
 		font-weight: 300;
-    overflow-x: hidden;
 }
 /*---------------------------------------
   scroller             
 -----------------------------------------*/
 *{box-sizing: border-box; -webkit-box-sizing: border-box; }
-html, body { height: 100%; }
+html { overflow-x: hidden; }
+html, body { min-height: 100%; }
 body { margin: 0; font: 16px/1.3 sans-serif; }
 
 
@@ -702,9 +702,14 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 footer {
-    border-top: 1px solid #f0f0f0;
-    padding: 100px 0px;
+    padding: 72px 0px 80px;
     position: relative;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 footer .col-md-3 .fa {
@@ -808,4 +813,245 @@ footer .footer-copyright {
     padding-top: 42px;
   }
 
+}
+
+
+/*---------------------------------------
+   Case study enhancements
+-----------------------------------------*/
+
+/* Sticky anchored sub-nav */
+.cs-subnav {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: saturate(160%) blur(10px);
+  backdrop-filter: saturate(160%) blur(10px);
+  border-bottom: 1px solid #eee;
+}
+.cs-subnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 26px;
+}
+.cs-subnav li { display: inline-block; }
+.cs-subnav a {
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 2px !important;
+  border-bottom: 2px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+.cs-subnav a:hover {
+  color: #122381;
+  border-bottom-color: #122381;
+}
+
+/* Small caps eyebrow label above a heading */
+.cs-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #122381;
+  margin-bottom: 6px;
+}
+
+/* Project metadata grid */
+.cs-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: left;
+  padding: 28px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: 26px 0 10px;
+}
+.cs-meta h4 {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+.cs-meta p { margin: 0; font-size: 15px; color: #323030; }
+
+/* Contribution / bullet list */
+.cs-contrib {
+  text-align: left;
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+.cs-contrib li { color: #323030; font-size: 15px; margin-bottom: 8px; line-height: 1.5; }
+
+/* Named sub-problem blocks */
+.cs-subsection { text-align: left; margin-bottom: 22px; }
+.cs-subhead {
+  color: #122381;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  margin: 0 0 8px;
+}
+
+/* Numbered insight / persona cards */
+.cs-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  text-align: left;
+  margin-top: 20px;
+}
+.cs-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fafafa;
+}
+.cs-card .cs-num {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #122381;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.cs-card h4 {
+  color: #222;
+  font-size: 17px;
+  margin: 0 0 10px;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 600;
+}
+.cs-card p { font-size: 14px; color: #555; margin: 0; }
+.cs-card blockquote {
+  border-left: 3px solid #122381;
+  margin: 14px 0 0;
+  padding: 4px 0 4px 14px;
+  font-style: italic;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Before / after comparison */
+.cs-compare {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+  margin: 18px 0;
+}
+.cs-ba { border-radius: 12px; padding: 20px 22px; }
+.cs-before { background: #f6f6f4; border: 1px solid #e8e8e4; }
+.cs-after { background: #eef1fb; border: 1px solid #d5ddf5; }
+.cs-ba .cs-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.cs-before .cs-tag { color: #999; }
+.cs-after .cs-tag { color: #122381; }
+.cs-ba p { margin: 0; font-size: 14px; color: #444; }
+
+/* Big number stat blocks */
+.cs-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: left;
+  margin: 24px 0 10px;
+}
+.cs-stat { padding: 6px 0; }
+.cs-stat-num {
+  display: block;
+  font-size: 54px;
+  font-weight: 700;
+  color: #122381;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.cs-stat h4 {
+  color: #222;
+  font-size: 15px;
+  margin: 12px 0 6px;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 600;
+}
+.cs-stat p { font-size: 13px; color: #777; margin: 0; }
+
+/* Reflection cards */
+.cs-reflection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  text-align: left;
+  margin-top: 20px;
+}
+.cs-reflection .cs-card h4 { color: #122381; }
+.cs-reflection .cs-did {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999;
+  margin: 14px 0 6px;
+}
+
+/* Next project / CTA */
+.cs-next {
+  text-align: center;
+  padding: 72px 0 64px;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+.cs-next .cs-eyebrow { text-align: center; }
+.cs-next h3 { margin-bottom: 26px; color: #222; }
+.cs-cta-btn {
+  display: inline-block;
+  background: #000;
+  color: #fff !important;
+  margin: 8px 8px 0;
+  padding: 14px 32px !important;
+  border-radius: 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.cs-cta-btn:hover { background: #122381; transform: translateY(-2px); }
+.cs-cta-btn.cs-ghost {
+  background: transparent;
+  color: #000 !important;
+  border: 1px solid #000;
+}
+.cs-cta-btn.cs-ghost:hover { background: #000; color: #fff !important; }
+
+@media (max-width: 767px) {
+  .cs-meta { grid-template-columns: repeat(2, 1fr); }
+  .cs-cards,
+  .cs-compare,
+  .cs-stats,
+  .cs-reflection { grid-template-columns: 1fr; }
+  .cs-subnav ul { gap: 4px 16px; }
+  .cs-subnav a { font-size: 11px; letter-spacing: 1px; }
+  .cs-stat-num { font-size: 44px; }
 }
