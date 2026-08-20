@@ -168,16 +168,16 @@ Fragmented Healthcare Communication Systems: The existing healthcare ecosystem h
                               <p><h3> <strong>Research finds</strong></h3>
                                    <p>Benchmarking:
                                         Our investigation revealed a full hand of software solutions catering to both private and public healthcare sectors, available in various forms such as systems, mobile apps, and websites. To analyze and compare these offerings effectively, we applied benchmarking principles commonly used in industry to evaluate performance and market position. Focusing on our project's objective of aiding oncology physicians in data management and patient connectivity throughout the cancer journey, we conducted targeted searches using keywords like EHR, HDM, and HIM. We also considered software mentioned in interviews and surveys, filtering out solutions not relevant to physician or patient use. Survey findings highlighted specific software like Tasy, Docway, and Uptodate, providing insight into market trends and identifying potential competitors. Further analysis of these solutions across key design variables revealed prominent features but lacked distinctive interface design or usability enhancements.
-                                         <br>   <div class="col-md-12 col-sm-12"><img src="images/whyze images/Whyze - competitor analysis 1.png" class="img-responsive" alt="full competitor analysis">
+                                         <br>   <div class="col-md-12 col-sm-12"><img src="images/whyze images/research findingsv2.png" class="img-responsive" alt="research findings">
                                         </p><br>
-                                        <br>   <div class="col-md-12 col-sm-12"><img src="images/whyze images/Whyze - competitor analysis.png" class="img-responsive" alt="competitor analysis position map">
+                                        <br>   <div class="col-md-12 col-sm-12"><img src="images/whyze images/swot analysis v2" class="img-responsive" alt="competitor analysis position map">
                                         </p><br>
                                         
                                         <p>Our research thoroughly examined existing software used in healthcare, focusing on features and suitability for doctors, especially those treating prostate cancer. Surveys revealed various software like Tasy, Docway, and Uptodate, helping us understand market trends and identify competitors. This analysis provided insights into user needs and areas for improvement. It guides the development of our software, aimed at improving prostate cancer care for doctors.</p>
                                   
                               </strong>   
 <br> <br> <h3> <strong>  Some relevant points:</strong></h3>
-                              <br>  <p> <strong>Our Objective</strong>  The goal is to optimize medical workflows to improve patient experience and service delivery.</p>
+                              <br>  <p> <strong>Our Objective</strong>� The goal is to optimize medical workflows to improve patient experience and service delivery.</p>
 <p> <strong>1. Challenges & Opportunities in EHR Systems</strong></p>
 <ul> EHR systems increase work efficiency by reducing documentation time (Tsai et al., 2020).
 However, implementation has been fragmented and initial expectations (efficiency, productivity, care quality) have not been fully met. (Evans, 2016)</ul>
@@ -214,8 +214,110 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
                                              <p><strong>Secondary Persona:</strong></p>
                                              <p><strong>Patient:</strong> This persona, representing a patient managing multiple medications for the first time after a new diagnosis, seeks reliable information sources and may need support to understand treatment processes and side effects. They may use a mobile phone for information but may not be interested in online data entry.</p>
                                              <p>These personas guide the design and development process by representing typical user behavior and requirements, ensuring a user-friendly system aligned with user needs. Additionally, user journey maps are integrated with the personas to enhance user experience throughout the product's lifecycle.</p>
-                                             <br>   <div class="col-md-12 col-sm-12"><img src="images/whyze images/Whyze - personas.png" class="img-responsive" alt="personas"></div>
-                                        </p>
+                                             <br>  
+
+                                        <!-- Persona slider (crossfade, wide landscape frame) -->
+                                        <div class="col-md-12 col-sm-12">
+                                             <div class="persona-slider" id="personaSlider">
+                                                  <div class="persona-slide is-active">
+                                                       <img src="images/whyze images/persona-admin.png" alt="Persona: Lidia Miles, Medical Secretary">
+                                                  </div>
+                                                  <div class="persona-slide">
+                                                       <img src="images/whyze images/persona-gp.png" alt="Persona: Doctor Daniel, General Practitioner">
+                                                  </div>
+                                                  <div class="persona-slide">
+                                                       <img src="images/whyze images/persona-oncologist.png" alt="Persona: Dr. Peidraigh, Radiation Oncologist">
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <style>
+                                        .persona-slider {
+                                             position: relative;
+                                             max-width: 1000px;
+                                             margin: 24px auto 10px;
+                                             aspect-ratio: 3 / 2;
+                                             border-radius: 8px;
+                                             overflow: hidden;
+                                             background: #f5f5f5;
+                                        }
+                                        .persona-slide {
+                                             position: absolute;
+                                             inset: 0;
+                                             opacity: 0;
+                                             transition: opacity 0.8s ease;
+                                        }
+                                        .persona-slide.is-active { opacity: 1; }
+                                        .persona-slide img {
+                                             width: 100%;
+                                             height: 100%;
+                                             object-fit: contain;
+                                             display: block;
+                                        }
+                                        .persona-slider__dots {
+                                             position: absolute;
+                                             bottom: 14px;
+                                             left: 50%;
+                                             transform: translateX(-50%);
+                                             display: flex;
+                                             gap: 8px;
+                                             z-index: 2;
+                                        }
+                                        .persona-slider__dots button {
+                                             width: 8px;
+                                             height: 8px;
+                                             border-radius: 50%;
+                                             border: 0;
+                                             padding: 0;
+                                             background: rgba(0, 0, 0, 0.28);
+                                             cursor: pointer;
+                                             transition: background 0.25s ease, width 0.25s ease;
+                                        }
+                                        .persona-slider__dots button.is-active {
+                                             background: #333;
+                                             width: 22px;
+                                             border-radius: 4px;
+                                        }
+                                        .persona-slider__dots button:focus-visible {
+                                             outline: 2px solid #333;
+                                             outline-offset: 2px;
+                                        }
+                                        </style>
+
+                                        <script>
+                                        (function () {
+                                             var slider = document.getElementById('personaSlider');
+                                             if (!slider) return;
+                                             var slides = slider.querySelectorAll('.persona-slide');
+                                             if (slides.length < 2) return;
+                                             var dots = document.createElement('div');
+                                             dots.className = 'persona-slider__dots';
+                                             slides.forEach(function (_, i) {
+                                                  var b = document.createElement('button');
+                                                  b.type = 'button';
+                                                  b.setAttribute('aria-label', 'Show persona ' + (i + 1));
+                                                  if (i === 0) b.classList.add('is-active');
+                                                  b.addEventListener('click', function () { go(i); });
+                                                  dots.appendChild(b);
+                                             });
+                                             slider.appendChild(dots);
+                                             var current = 0, timer;
+                                             function go(i) {
+                                                  slides[current].classList.remove('is-active');
+                                                  dots.children[current].classList.remove('is-active');
+                                                  current = i;
+                                                  slides[current].classList.add('is-active');
+                                                  dots.children[current].classList.add('is-active');
+                                             }
+                                             function tick() { go((current + 1) % slides.length); }
+                                             function start() { timer = setInterval(tick, 5000); }
+                                             function stop() { clearInterval(timer); }
+                                             slider.addEventListener('mouseenter', stop);
+                                             slider.addEventListener('mouseleave', start);
+                                             start();
+                                        })();
+                                        </script>
+                                        
                                    <div class="col-md-12 col-sm-12 text-left">
     <h3><strong>User journeys and flows</strong></h3>
     
@@ -240,7 +342,8 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
 }
 
 .scrolling-wrapper img.img-responsive {
-    display: inline-block !important;
+        display: inline-block !important;
+    display
     max-width: none !important; 
     max-height: 400px !important; /* Adjust as needed */
     width: auto !important;
@@ -252,46 +355,46 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
 
 
 
-                                             
+
 <div class="col-md-12 col-sm-12 text-left ">
      <p><h3> <strong>Wrapping up the data collected</strong></h3>                                             
 <p>The extensive research conducted provides a comprehensive understanding of the complex prostate cancer patient journey and the healthcare ecosystem surrounding it. Several key insights emerge from our analysis:</p>
-    
+
     <div class="insight-container">
         <div class="insight-title">1. Patient Journey Complexity</div>
         <div class="insight-content">
             Figure 57 illustrates how prostate cancer consultations follow three main patterns (initial consultation, exam requests, and follow-up/prescription renewal), each involving multiple touchpoints that require significant patient effort for scheduling, commuting, and coordination.
         </div>
     </div>
-    
+
     <div class="insight-container">
         <div class="insight-title">2. Interconnected Stakeholder Network</div>
         <div class="insight-content">
             The experience connection map (Figure 58) reveals the rich ecosystem of relationships between patients, healthcare providers, locations, and contextual factors. This demonstrates that healthcare experiences extend far beyond the traditional doctor-patient relationship to include multiple care locations, family support, administrative staff, and influencing factors like finances, language, and cultural considerations.
         </div>
     </div>
-    
+
     <div class="insight-container">
         <div class="insight-title">3. Digital Solution Architecture</div>
         <div class="insight-content">
             Our information architecture maps for both the healthcare provider portal (Figure 59) and patient mobile application (Figure 60) address the core needs identified in the research. The HCP portal focuses on streamlining clinical workflows for e-prescribing, referrals, and patient case management, while the patient app prioritizes appointment booking, medication tracking, and health monitoring.
         </div>
     </div>
-    
+
     <div class="insight-container">
         <div class="insight-title">4. Pain Points and Opportunities</div>
         <div class="insight-content">
             Through interviews and literature review, we identified significant friction in the current healthcare communication systems. Patients typically begin their journey with concerning symptoms, conduct internet research, and then navigate a fragmented scheduling system involving multiple methods (phone calls, emails, software systems). Our proposed digital ecosystem creates a unified channel to connect these previously disconnected experiences.
         </div>
     </div>
-    
+
     <div class="insight-container">
         <div class="insight-title">5. User-Centered Approach</div>
         <div class="insight-content">
             By developing separate but integrated interfaces for healthcare providers and patients, our solution addresses the specific needs of each user group while facilitating better communication between them. The straightforward information architecture prioritizes accessibility for users of all ages and technical abilities.
         </div>
     </div>
-    
+
     <div class="conclusion">
         <p>This research has guided our focus toward a specific part of the patient journey—setting up and attending consultations—as the initial area for prototype development, with room for expansion as the product evolves. The proposed web portal and mobile application ecosystem aims to transform the fragmented healthcare communication landscape into a cohesive, user-friendly experience for both providers and patients.</p>
     </div>
@@ -322,7 +425,7 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
             padding: 20px;
             border-radius: 5px;
             margin-top: 40px;
-     
+
 </style>
 
  <div class="scrolling-wrapper">
@@ -350,7 +453,7 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     object-fit: contain !important;
 }
 </style>
-     
+
 <div class="col-md-12 col-sm-12 text-left ">
                                                   <p><h3> <strong>Wireframes & protoype</strong></h3> 
                                                        Some of the main images created during this process.
@@ -425,7 +528,7 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
 }
 </style>
 
-                                        
+
 <!-- SLIDERRRRR 
 <div class="col-md-12 col-sm-12 text-left">
     <h3><strong>Mobile final screens </strong></h3>
@@ -470,7 +573,6 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
         </div>
     </div>
 </div>
-
 <style>
 /* Slider Container */
 .whyze-slider-container {
@@ -479,7 +581,6 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     margin: 30px auto;
     overflow: hidden;
 }
-
 /* Slider */
 .whyze-slider {
     position: relative;
@@ -489,7 +590,6 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     border-radius: 8px;
     overflow: hidden;
 }
-
 /* Slides */
 .whyze-slide {
     position: absolute;
@@ -500,11 +600,9 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     display: none;
     text-align: center;
 }
-
 .whyze-slide.active {
     display: block;
 }
-
 .whyze-slide img {
     max-height: 100%;
     max-width: 100%;
@@ -516,7 +614,6 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     transform: translate(-50%, -50%);
     object-fit: contain;
 }
-
 /* Navigation */
 .whyze-slider-nav {
     display: flex;
@@ -524,7 +621,6 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     align-items: center;
     margin-top: 15px;
 }
-
 .whyze-prev-btn, .whyze-next-btn {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
@@ -536,11 +632,9 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .whyze-prev-btn:hover, .whyze-next-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 .whyze-slider-numbers {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
@@ -548,13 +642,11 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     border-radius: 20px;
     font-size: 14px;
 }
-
 /* Dots */
 .whyze-slider-dots {
     text-align: center;
     margin-top: 15px;
 }
-
 .whyze-dot {
     display: inline-block;
     width: 30px;
@@ -569,12 +661,10 @@ A user-centered approach (personas, journeys) is critical for designing effectiv
     color: white;
     font-size: 12px;
 }
-
 .whyze-dot.active {
     background-color: #717171;
 }
 </style>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Get all slides
@@ -649,7 +739,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 -->
-     
+
  <div class="col-md-12 col-sm-12 text-left">
     <h3><strong>Interactive Prototype</strong></h3>
     <p>Experience the full interactive prototype below:</p>
@@ -695,12 +785,12 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 
 
-                                        
+
      <br> <br> <br> 
-     
+
 <p> <p><a href="https://https://www.whyzehealth.com/"> Whyzehealth land page </a></p></p>
 
-               
+
               </div>
                     </div>
                </div>
@@ -790,7 +880,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="row">
 
                <div class="col-md-3 col-sm-3">
-                    
+
                     <a href="index.html"><img src="assest/brand%20abstract/brand-48-abs.svg" alt="Jessica Pontes logo"/></a> 
                </div>
 
@@ -798,16 +888,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>Dublin, Ireland</p> 
 
                </div>
-  
+
 
                <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
                     <p><a href="https://www.linkedin.com/in/jessicabpontes/">Check my Linkedin </a></p>
                     <p><a href="mailto:jessbpontes@gmail.com?subject=Hi! I've been seen your portfolio">jessbpontes@gmail.com</a></p>
                  <!--  <p>(+55) 27 999683731</p> -->  
-                    
+
                </div>
 
-               
+
           </div>
      </div>
 </footer>
@@ -842,6 +932,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-                                                  
+
 </body>
 </html>
